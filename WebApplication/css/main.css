@@ -1,0 +1,232 @@
+
+/****************************/
+/*GENERAL  					*/
+/****************************/
+
+html * {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper{
+	min-height: 100%;
+	position:relative;
+}
+
+#container{
+	margin-left:30px;
+	padding:10px;
+	padding-bottom: 124px;
+}
+
+/****************************/
+/*HEADER/FOOTER  			*/
+/****************************/
+
+#header {
+  width: 100%;
+  padding-bottom: 1px;
+}
+
+#header-content {
+  color: white;
+  padding: 5px 0 0 5px;
+  margin-bottom: 10px;
+}
+
+#footer {
+	border-top: 8px solid #599a68;
+	font-size: 0.95em;
+	text-align: center;
+  	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:124px; 
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#contact {
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#contact:hover {
+	color: black;
+}
+
+/****************************/
+/*HEADER/FOOTER -> COLORS   */
+/****************************/
+
+
+/* green header */
+#header {
+  background: #6ab47b;
+}
+
+#footer {
+  border-color:#599a68;
+  background-color: #6ab47b;
+}
+
+#footer-content {
+  color: white;
+}
+
+/***********************/
+/*MENU BAR 			   */
+/***********************/
+
+#navigation-content {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	
+	background-color: #599a68;
+}
+
+#navigation-content ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+#navigation-content ul li {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 4px;
+	font-weight: bold;
+	color: white;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 15%;
+}
+
+#navigation a {
+	text-decoration: none;
+}
+
+.nav-item:link, .nav-item:visited {
+	color: white;
+}
+
+.nav-item:hover, .nav-item:active {
+    color: black;
+}
+
+/**********************/
+/*TABLES -> GENERAL   */
+/**********************/
+
+table {
+	border-collapse: collapse;
+	border-width: 2px;
+	table-layout: atuo;
+	margin: 0 0 10px 5px;
+	max-width: 100%;
+	
+	border-color: #599a68;
+}
+
+table th {
+	font-size: 14px;
+	border:1px solid black;
+	padding: 0 4px 0 4px;
+}
+
+table td {
+	font-size: 14px;
+	text-align: left;
+	border:1px solid black;
+	padding: 0 4px 0 4px;
+} 
+
+/***********************************/
+/*PROGRAM SELECTION   			   */
+/***********************************/
+
+h4 {
+	margin-left: 5px;
+}
+
+#student-info {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 5px;
+}
+
+#student-info li {
+	float: left;
+	width: auto;
+	display: block;
+	position: relative;
+	margin-right: 4px;
+}
+
+.post-float-text {
+	margin-left: 5px;
+	clear: both;
+}
+
+#selection {
+	clear: both;
+}
+
+#exploreForm {
+	width: 560px;
+	margin-left:40px;
+	background-color: #EEE;
+	display: none;
+	clear: both;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+#selectMajor {
+	width:500px;
+	margin-left: 5px;
+}
+
+#selectMinor {
+	width:500px;
+	margin-left: 5px;
+}
+
+/*******************************/
+/*Remaining Courses 		   */
+/*******************************/
+
+#user_data{
+	display: none;
+}
+
+#area_code{
+	display: none;
+}
+
+.degree_area{
+	cursor: pointer;
+}
+
+.degree_area:hover{
+	background-color: #E6E6E6;
+}
+
+#courses{
+	clear: both;
+}

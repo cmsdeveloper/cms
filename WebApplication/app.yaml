@@ -1,0 +1,41 @@
+# app.yaml
+# Authors:
+# 	 Ryder Huggins
+# 	 Lorenzo von Ritter
+# 
+# Al Akhawayn University
+# CSC 3326 Section 01
+# Fall 2014
+#
+# app.yaml configures the file system for the deployment on Google AppEngine.
+# Each url is linked to a file location. Static content is assigned a static directory.
+application: curriculum-management
+version: 3
+runtime: php
+api_version: 1
+
+handlers:
+- url: /favicon.ico
+  mime_type: image
+  static_files: Icon/FaviconTransparent_32.ico
+  upload: Icon/FaviconTransparent_32\.ico
+
+- url: /css/
+  mime_type: text/css
+  static_dir: css
+
+- url: /template/header.php
+  script: template/header.php
+
+- url: /template/footer.php
+  script: template/footer.php
+
+- url: /(.+\.php)$
+  script: \1
+
+- url: /javascript
+  mime_type: application/javascript
+  static_dir: javascript
+
+- url: /.*
+  script: home.php
